@@ -13,6 +13,28 @@ export class DashboardComponent implements OnInit {
     { title: 'Logout' },
   ];
 
+  menus = [
+    {
+      title: 'Dashboard',
+      icon: 'home-outline',
+      link: [],
+    },
+    {
+      title: 'Profile',
+      icon: 'person-outline',
+      link: [],
+    },
+    {
+      title: 'Request',
+      icon: 'message-circle',
+      link: [],
+    },
+    {
+      title: 'Logout',
+      icon: 'unlock-outline',
+      link: [],
+    },
+  ];
   constructor(private sidebarService: NbSidebarService) { }
 
   ngOnInit() {
