@@ -1,0 +1,39 @@
+<nb-layout center>
+        <nb-layout-column>
+            <nb-card>
+                <nb-card-header>Login</nb-card-header>
+                <nb-card-body>
+                    <p class="sub-title">Hello! Please Log in with your email.</p>
+                
+                    <form aria-labelledby="title">
+                      <div class="form-group">
+                        <label class="label" for="input-email">Email address:</label>
+                        <input nbInput
+                              fullWidth           
+                              placeholder="Email address"
+                              fieldSize="large"
+                              autofocus>
+                      </div>
+                
+                      <div class="form-group">
+                        <span class="label-with-link">
+                          <label class="label" for="input-password">Password:</label>
+                          <a class="forgot-password caption-2" routerLink="../request-password">Forgot Password?</a>
+                        </span>
+                        <input nbInput
+                              fullWidth
+                              placeholder="Password"
+                              fieldSize="large">
+                      </div>
+                
+                      <button nbButton
+                              fullWidth
+                              status="primary"
+                              size="large">
+                        Log In
+                      </button>
+                    </form>
+                </nb-card-body>
+              </nb-card>
+        </nb-layout-column>
+      </nb-layout>

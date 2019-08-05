@@ -1,0 +1,23 @@
+<nb-layout>
+    <nb-layout-header fixed>
+        <button nbButton status="success" size="small" (click)="toggle()"><nb-icon icon="menu-outline"></nb-icon></button>
+        <nb-actions size="medium">
+            <nb-action>
+                Mitrais Intelligent Facilities
+            </nb-action>
+        </nb-actions>
+        <div [ngStyle]="{'margin-left': 'auto'}">
+            <button nbButton ghost [nbContextMenu]="items" >
+                <nb-user size="small"
+                    name="John Doe"
+                    title="Engineer"
+                    color="#cccccc">
+                </nb-user>
+            </button>
+        </div>
+    </nb-layout-header>
+    
+    <nb-sidebar tag="left"></nb-sidebar>
+    
+    <nb-layout-column class="colored-column-warning">Layout Content</nb-layout-column>
+</nb-layout>
